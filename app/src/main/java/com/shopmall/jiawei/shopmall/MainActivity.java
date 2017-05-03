@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mInflater = LayoutInflater.from(this);
-
         initTab();
     }
 
@@ -86,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
             cartFragment.refData();
-
         }
     }
 
