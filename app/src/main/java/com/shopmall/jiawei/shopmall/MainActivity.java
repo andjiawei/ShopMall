@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
     private FragmentTabHost mTabhost;
     private CartFragment cartFragment;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
         mTabhost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
             @Override
             public void onTabChanged(String tabId) {
-
                 if(tabId==getString(R.string.cart)){
                     refData();
                 }

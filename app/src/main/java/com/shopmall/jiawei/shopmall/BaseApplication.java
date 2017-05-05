@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.shopmall.jiawei.shopmall.bean.User;
 import com.shopmall.jiawei.shopmall.utils.UserLocalData;
 
@@ -23,8 +24,8 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         mInstance = this;
+        Fresco.initialize(this);
         initUser();
     }
 
